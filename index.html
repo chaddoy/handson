@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>TritonTek</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+	<div class="main-container">
+		<header class="col-md">
+			<img class="logo" src="http://placehold.it/250x100" />
+
+			<nav class="inline-nav hidden-sm">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Get Quote</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<img id="btn-menu" class="burger-menu visible-sm" src="img/menu-burger.png" />
+			<nav  class="dropdown-nav hidden visible-sm">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Get Quote</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="banner container">
+			<img src="http://placehold.it/1180x400" width="100%" />
+		</div>
+
+		<div class="content container">
+			<aside class="hidden-xs">
+			</aside>
+
+			<section>
+				<figure>
+					<img src="http://placehold.it/250x250" width="100%" />
+					<figcaption>Caption</figcaption>
+				</figure>
+
+				Lorem ipsum dolor sit amet, no tota mutat vix, posse minimum adipisci at nec. Cum in alienum qualisque. In amet tempor alterum pro, pro ne falli postulant. An mea omnium bonorum hendrerit, etiam causae his ei, epicuri suavitate contentiones ne his. Omittam assueverit ea vis, oportere assueverit his ut, id wisi delenit argumentum has. Tacimates rationibus no sed, ex has augue albucius inimicus. Nam ut brute malis oporteat, ne quo vocibus percipit sadipscing, at clita tritani equidem eos. Posse ludus luptatum ut eum, nullam melius ut sea, his purto rationibus te. Habeo nostrum efficiantur in quo, qui id torquatos scriptorem appellantur. No mei primis iudicabit, an vel congue scriptorem. Amet impetus moderatius vix at, nec an consul impetus. Ad usu brute alterum offendit, sea dictas verear reprimique an, cu aliquam dolores interesset usu. Qui libris aliquip accommodare an. Vis te suas integre, dictas appareat disputando ad quo. Ex detracto legendos nominati vix, mea diceret dolorum definiebas eu. Magna vivendo vel eu, at dictas voluptatum per. Id ullum delectus duo, ut choro eruditi invenire pro, ad nam paulo saperet. Ne vim diam ignota detracto. Accumsan apeirian maluisset no pro. No aeque denique usu, in dolorum perfecto has, malis congue reprimique an est. At timeam consequuntur per, mel posse alterum voluptua te. Ius inimicus reprimique cu, affert officiis ei cum. Oblique inciderint ne vix, mei ut regione scribentur. Quaeque splendide laboramus mea eu, ei vel alia vocent adolescens, nobis corpora insolens sit an. Lorem ipsum dolor sit amet, no tota mutat vix, posse minimum adipisci at nec. Cum in alienum qualisque. In amet tempor alterum pro, pro ne falli postulant. An mea omnium bonorum hendrerit, etiam causae his ei, epicuri suavitate contentiones ne his. Omittam assueverit ea vis, oportere assueverit his ut, id wisi delenit argumentum has. Tacimates rationibus no sed, ex has augue albucius inimicus. Nam ut brute malis oporteat, ne quo vocibus percipit sadipscing, at clita tritani equidem eos. Posse ludus luptatum ut eum, nullam melius ut sea, his purto rationibus te. Habeo nostrum efficiantur in quo, qui id torquatos scriptorem appellantur. No mei primis iudicabit, an vel congue scriptorem.
+
+				<div class="thumbnails hidden-sm">
+					<img src="http://placehold.it/260x260" />
+					<img src="http://placehold.it/260x260" />
+					<img src="http://placehold.it/260x260" />
+				</div>
+			</section>
+
+			<div class="break"></div>
+
+			<div class="thumbnails visible-sm">
+				<img src="http://placehold.it/260x260" />
+				<img src="http://placehold.it/260x260" />
+				<img src="http://placehold.it/260x260" />
+			</div>
+
+			<div class="aside-xs container">Aside content</div>
+		</div>
+
+		<footer>
+		</footer>
+	</div>
+
+
+	<script>
+		var menuBtn = document.getElementById( 'btn-menu' );
+
+		menuBtn.addEventListener( 'click', function () {
+			var menu = document.getElementsByClassName( 'dropdown-nav' )[ 0 ];
+			var split    = menu.className.split( ' ' );
+			var isHidden = split.indexOf( 'hidden' ) > -1;
+
+			if ( isHidden ) {
+				menu.style.display = 'block';
+				menu.className = menu.className.replace( 'hidden', 'visible' );
+			} else {
+				menu.style.display = 'none';
+				menu.className = menu.className.replace( 'visible', 'hidden' );
+			}
+		}, false );
+	</script>
+</body>
+</html>
